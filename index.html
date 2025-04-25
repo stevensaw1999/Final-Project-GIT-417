@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Right Home for You</title>
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Examples to Help You Get Started on the Final Project</h1>
+        <p>These are just meant to help you when you begin the final project for GIT417. There is no JavaScript written, but if you struggle with HTML and CSS, these code examples are a start for the sections of the page you could use to build the product switcher, guessing game, or shopping cart. Be sure to update the code with appropriate content, ids and classes, and to write functional JavaScript to work with it for the final.Make sure that you understand how the styles are wokring and how the cascade is working here, as well as how CSS Reset works, because it was used in this pen, along with CSS variables and rem units.
+        <strong>The code on this page is not responsive!</strong></p>
+    </header>
+    <!-- FROM THE REQUIREMENTS:
+    Your coded site, to include semantic HTML, appropriate CSS (your site is not required to be responsive), and JS. ALL of the code written for this page must be written from scratch by you. Please see and review the academic integrity policy for more information. First, you'll have some required elements:
+    The site will be a single page that displays properly styled at 1280 or 1440 pixels wide (fixed).
+    The page should look like a real, stand-alone website. Users should see all of the kind of content that they would expect from any professional website. No placeholder text is allowed, text and photos should be realistic and high-quality, and everything you'd expect to see should be present (header, navigation (even within the page), footer, etc. -->
+    
+    <!-- This pen uses CSS Reset - If you would like to start with this HTML/CSS as a base in your project, you will need to use the CSS reset code as well or the styles won't work in the same way for you -->
+    <main>
+        <section id="switcher1">
+            <h2>Product Switcher Example 1</h2>
+            <section id="product1" class="currentItem">
+                <h3>Heading Describing Item 1</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="product2" class="hiddenItem">
+                <h3>Heading Describing Item 2</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="product3" class="hiddenItem">
+                <h3>Heading Describing Item 3</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="switcherButtons">
+                <h2 class="sr-only">Click on a Button to View a Product</h2>
+                <button id="btn1">View Item 1</button>
+                <button id="btn2">View Item 2</button>
+                <button id="btn3">View Item 3</button>
+            </section>
+        </section>
+        <section id="switcher2">
+            <h2>Product Switcher Example 2</h2>
+            <section id="product4" class="currentItem">
+                <h3>Heading Describing Item 4</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="product5" class="hiddenItem">
+                <h3>Heading Describing Item 5</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="product6" class="hiddenItem">
+                <h3>Heading Describing Item 6</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="switcher2Buttons">
+                <h2 class="sr-only">Click on a Button to View a Product</h2>
+                <button id="btn4">View Item 4</button>
+                <button id="btn5">View Item 5</button>
+                <button id="btn6">View Item 6</button>
+            </section>
+        </section>
+        <section id="switcher3">
+            <h2>Product Switcher Example 3</h2>
+            <section id="switcher3Buttons">
+                <h2 class="sr-only">Click on a Button to View a Product</h2>
+                <button id="btn7">View Item 7</button>
+                <button id="btn8">View Item 8</button>
+                <button id="btn9">View Item 9</button>
+            </section>
+            <section id="product7" class="currentItem">
+                <h3>Heading Describing Item 7</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="product8" class="hiddenItem">
+                <h3>Heading Describing Item 8</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section id="product9" class="hiddenItem">
+                <h3>Heading Describing Item 9</h3>
+                <img src="https://placekeanu.com/600/400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+        </section>
+        <section id="game1">
+            <div>
+                <h2>Guessing Game Example 1</h2>
+                <form>
+                    <label for="numGuess">Enter a Number Between 1 and 10:</label>
+                    <span class="message">Please enter a number from 1 to 10</span>
+                    <input type="number" name="numGuess" id="numGuess">
+                    <input type="submit" name="guessGame" id="guessGame" value="Play the Game!">
+                </form>
+                <section id="gameDisplay">
+                    <h3>Guess a Number!</h3>
+                    <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
+                    <p id="gameOutput">This is where the random number and user guess would display, along with a message about whether they won or not.</p>
+                </section>
+            </div>
+        </section>
+        <section id="game2">
+            <div>
+                <h2>Guessing Game Example 2</h2>
+                <p>Enter a number between 1 and 10 in the box below and click the button to play. If your number matches, you win!</p>
+                <form>
+                    <label for="numGuess2">Enter a Number Between 1 and 10:</label>
+                    <span class="message">Please enter a number from 1 to 10</span>
+                    <input type="number" name="numGuess2" id="numGuess2">
+                    <input type="submit" name="guessGame2" id="guessGame2" value="Play the Game!">
+                </form>
+                <section id="gameDisplay2">
+                    <h3 class="sr-only">Guess a Number!</h3>
+                    <ul id="gameOutput2">
+                        <li id="userNum"><span>5</span>Your Guess</li>
+                        <li id="randomNum"><span>10</span>Winning Number</li>
+                    </ul>
+                    <p id="game2Msg">Message about winning or losing the game</p>
+                </section>
+            </div>
+        </section>
+        <section id="cart1">
+            <h2>Shopping Example 1</h2>
+            <section id="products1">
+                <h3 class="sr-only">Our Products</h3>
+                <section>
+                    <img src="https://placekeanu.com/200/200" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                    <h4>Product Name 1</h4>
+                    <p>$0.00</p>
+                    <button id="pn1">Add To Cart</button>
+                </section>
+                <section>
+                    <img src="https://placekeanu.com/200/200" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                    <h4>Product Name 2</h4>
+                    <p>$0.00</p>
+                    <button id="pn2">Add To Cart</button>
+                </section>
+                <section>
+                    <img src="https://placekeanu.com/200/200" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                    <h4>Product Name 3</h4>
+                    <p>$0.00</p>
+                    <button id="pn3">Add To Cart</button>
+                </section>
+            </section>
+            <section id="totals1">
+                <h3>Cart</h3>
+                <ul id="itemsList1">
+                    <li>Your Cart is Empty</li>
+                </ul>
+                <ul>
+                    <li id="subtotal1">Subtotal: <span>$0.00</span></li>
+                    <li id="tax1">Tax: <span>$0.00</span></li>
+                    <li id="shipping1">Shipping: <span>$0.00</span></li>
+                    <li id="total1">Total: <span>$0.00</span></li>
+                </ul>
+                <button id="checkout1">Checkout</button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>For Educational Purposes Only</p>
+    </footer>
+</body>
+</html>
