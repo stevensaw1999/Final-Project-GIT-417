@@ -45,5 +45,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Start of Guessing Game
+function setupGuessingGame() {
+    const guessGameButton = document.getElementById("guessGame");
+    const numGuessInput = document.getElementById("numGuess");
+    const gameOutput = document.getElementById("gameOutput");
+
+    guessGameButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent form submission
+
+        const userGuess = parseInt(numGuessInput.value);
+        const randomNumber = Math.floor(Math.random() * 10) + 1; // Random number between 1 and 10
+
+        if (userGuess === randomNumber) {
+            gameOutput.textContent = `Congratulations! You guessed ${userGuess}, and the random number was ${randomNumber}. You win!`;
+        } else {
+            gameOutput.textContent = `Sorry, you guessed ${userGuess}, but the random number was ${randomNumber}. Try again!`;
+        }
+    });
+}
+
+// Initialize the Guessing Game on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", () => {
+    houseSwitch(); // Initialize product display
+    setupGuessingGame(); // Initialize guessing game
+});
 
 
