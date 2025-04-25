@@ -5,7 +5,7 @@ const products = [
     {
       name: "House-1",
       image: "",
-      description: ""
+      description: "House-1"
     },
     {
       name: "House-2",
@@ -39,6 +39,10 @@ const products = [
         });
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    setupProductSwitcher();
+});
 
 // Start of Guessing Game
 
