@@ -184,80 +184,11 @@ input{
 	align-self: end;
 }
 
-/* ----- PRODUCT SWITCHER EXAMPLE 2 ----- */
-/* ----- CLASSES FOR PRODUCT SWITCHER ----- */
-#switcher2 .currentItem{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 2fr 1fr;
-	gap: 1rem;
+#switcher1 img {
+    width: 500px; /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
 }
-
-.hiddenItem{
-	display: none;
-}
-
-#switcher2{
-	margin-top: 2rem;
-}
-
-#switcher2 img{
-	grid-row: 1/-1;
-	grid-column: 2/-1;
-}
-
-#switcher2Buttons{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 1rem;
-	width: fit-content;
-	position: relative;
-	left: 12%;
-	top: -80px;
-}
-
-/* ----- PRODUCT SWITCHER EXAMPLE 3 ----- */
-#switcher3{
-	margin-top: 2rem;
-	padding-bottom: 2rem;
-	display: grid;
-	grid-template-columns: 1fr 4fr;
-	gap: 1rem;
-}
-
-#switcher3 h2{
-	grid-column: 1/-1;
-}
-
-/* ----- CLASSES FOR PRODUCT SWITCHER ----- */
-#switcher3 .currentItem{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 4fr;
-	gap: 1rem;
-}
-
-.hiddenItem{
-	display: none;
-}
-
-#switcher3Buttons{
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 1rem;
-	height: fit-content;
-	align-self: center;
-}
-
-#switcher3 img{
-	grid-row: 1/-1;
-}
-
-#switcher3 h3{
-	grid-column: 2/-1;
-	align-self: end;
-}
-
 /* ----- GUESSING GAME EXAMPLE 1 ----- */
 #game1{
 	margin-top: 2rem;	
