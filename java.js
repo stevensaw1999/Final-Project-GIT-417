@@ -4,22 +4,22 @@
 const products = [
     {
       name: "House-1",
-      image: "",
+      image: "/images/house1.jpg",
       description: "House-1"
     },
     {
       name: "House-2",
-      image: "",
-      description: ""
+      image: "/images/house2.jpg",
+      description: "Beautiful House-2"  
     },
     {
       name: "House-3",
-      image: "",
-      description: ""
+      image: "/images/house3.jpg",
+      description: "Beautiful House-3"
     }
   ];
 
-  // Switching 
+  // Switching Images and Text
   function houseSwitch(){
     const buttons = document.querySelectorAll("#switcherButtons button");
     const productSections = document.querySelectorAll("#switcher1 > section");
@@ -41,10 +41,9 @@ const products = [
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    setupProductSwitcher();
+   houseSwitch();
 });
 
 // Start of Guessing Game
 
-// Event Handlers
-// for hide show text function
+
